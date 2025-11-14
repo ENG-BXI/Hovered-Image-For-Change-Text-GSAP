@@ -19,10 +19,12 @@ images.forEach((img, inx) => {
       height: 100
     });
     gsap.to(allText[0], {
-      y: 100
+      y: 100,
+      ease: 'power.inOut'
     });
     gsap.to(allText[inx + 1], {
-      y: 0
+      y: 0,
+      ease: 'power.inOut'
     });
     gsap.to(allSpan, {
       y: 0,
@@ -30,7 +32,8 @@ images.forEach((img, inx) => {
       stagger: {
         each: 0.05,
         from: 'center'
-      }
+      },
+      ease: 'power.inOut'
     });
     gsap.to(DefaultSpan, {
       y: 100,
@@ -38,21 +41,25 @@ images.forEach((img, inx) => {
       stagger: {
         each: 0.05,
         from: 'center'
-      }
+      },
+      ease: 'power.inOut'
     });
   });
   img.addEventListener('mouseleave', () => {
     gsap.to(img, {
       width: 70,
-      height: 70
+      height: 70,
+      ease: 'power.inOut'
     });
     gsap.to(allText[0], {
       y: 0,
-      delay: 0.1
+      delay: 0.1,
+      ease: 'power.inOut'
     });
     gsap.to(allText[inx + 1], {
       y: '-100%',
-      delay: 0.1
+      delay: 0.1,
+      ease: 'power.inOut'
     });
     gsap.to(allSpan, {
       y: -100,
@@ -60,7 +67,8 @@ images.forEach((img, inx) => {
       stagger: {
         each: 0.05,
         from: 'center'
-      }
+      },
+      ease: 'power.inOut'
     });
     gsap.to(DefaultSpan, {
       y: 0,
@@ -68,7 +76,8 @@ images.forEach((img, inx) => {
       stagger: {
         each: 0.05,
         from: 'center'
-      }
+      },
+      ease: 'power.inOut'
     });
   });
 });
