@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.img {
+    width: 70px;
+    height: 70px;
+}
+
+.images {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    height: 100px;
+}
+
+.texts {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+}
+
+.text {
+    position: absolute;
+    overflow: hidden;
+}
+
+.text h2 {
+    font-size: 6rem;
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: -0.4rem;
+    white-space: noWrap;
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+}
+
+.text h2.default,
+.text h2.default span {
+    color: white;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+
+.text h2 span {
+    display: inline-block;
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
